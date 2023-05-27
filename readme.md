@@ -1,5 +1,6 @@
 本项目基于 [YOLOv5 v6.0](https://github.com/ultralytics/yolov5/tree/v6.0)
- [图形化界面基于此](https://github.com/Javacr/PyQt5-YOLOv5)
+图形化界面项目地址：[界面](https://github.com/Javacr/PyQt5-YOLOv5)
+基于bilibliUP主:[景唯acr](https://space.bilibili.com/34704910)
 
 Download the models of  YOLOv5 v6.1 from [here](https://github.com/ultralytics/yolov5/releases/tag/v6.0)，and put the them to the pt folder. When the GUI runs, the existing models will be automatically detected.
 
