@@ -19,7 +19,7 @@ from utils.plots import Annotator, colors
 from utils.torch_utils import select_device
 from utils.capnums import Camera
 """
-作者：汪永杰
+作者：jason
 编写时间：2023/4/9 12:13
 其他：无
 """

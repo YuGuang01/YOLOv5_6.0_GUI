@@ -2,7 +2,7 @@ from PyQt5.QtWidgets import QLabel
 from PyQt5.QtCore import pyqtSignal
 
 """
-作者：汪永杰
+作者：jason
 编写时间：2023/4/12 11:12
 其他：无
 """
