@@ -11,7 +11,7 @@ from pathlib import Path
 import numpy as np
 import shutil
 '''
-作者：汪永杰
+作者：jason
 编写时间：2023/4/1 10:12
 其他：根据爬取的数据 划分成训练集和验证集
 '''
