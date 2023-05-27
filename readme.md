@@ -6,7 +6,7 @@
 
 ### 演示视频：
 [https://www.bilibili.com/video/BV1jM4y1i794/?spm_id_from=333.788&vd_source=f2fccfb804f78aa96a9f694581bafb10](https://www.bilibili.com/video/BV1jM4y1i794/?spm_id_from=333.788&vd_source=f2fccfb804f78aa96a9f694581bafb10)
-<object data="tools/video.mp4" height="600px" width="100%"></object>
+
 ### 快速搭建
 
 ```bash
