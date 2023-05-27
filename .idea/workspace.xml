@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc9589d1-73aa-4dad-8ede-ea6a15224ff0" name="变更" comment="修改readme&#10;&#10;Signed-off-by: jason &lt;jason.wyj@foxmail.com&gt;">
+    <list default="true" id="fc9589d1-73aa-4dad-8ede-ea6a15224ff0" name="变更" comment="修改信息&#10;&#10;Signed-off-by: jason &lt;jason.wyj@foxmail.com&gt;">
+      <change afterPath="$PROJECT_DIR$/tools/video.mp4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/Data_Split.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/Data_Split.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/Model_Network_Visualization.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/Model_Network_Visualization.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/MouseLabel.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/MouseLabel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/Pytorch_Env_Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/Pytorch_Env_Test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +15,10 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="KEEP" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="2QKhhVBrBZAb6UR0Y9tfeTeWwUo" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -30,13 +30,18 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/tools" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\python\YOLOv5_6.0_GUI\tools" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -48,7 +53,7 @@
       <updated>1685108302546</updated>
       <workItem from="1685108304774" duration="54000" />
       <workItem from="1685160774861" duration="134000" />
-      <workItem from="1685197884095" duration="1048000" />
+      <workItem from="1685197884095" duration="2685000" />
     </task>
     <task id="LOCAL-00001" summary="建立仓库&#10;&#10;Signed-off-by: jason &lt;jason.wyj@foxmail.com&gt;">
       <created>1685160668005</created>
@@ -85,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685198683122</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="修改信息&#10;&#10;Signed-off-by: jason &lt;jason.wyj@foxmail.com&gt;">
+      <created>1685199014323</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1685199014323</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,6 +118,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="建立仓库&#10;&#10;Signed-off-by: jason &lt;jason.wyj@foxmail.com&gt;" />
     <MESSAGE value="修改readme&#10;&#10;Signed-off-by: jason &lt;jason.wyj@foxmail.com&gt;" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改readme&#10;&#10;Signed-off-by: jason &lt;jason.wyj@foxmail.com&gt;" />
+    <MESSAGE value="修改信息&#10;&#10;Signed-off-by: jason &lt;jason.wyj@foxmail.com&gt;" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改信息&#10;&#10;Signed-off-by: jason &lt;jason.wyj@foxmail.com&gt;" />
   </component>
 </project>

@@ -6,7 +6,7 @@
 
 ### 演示视频：
 [https://www.bilibili.com/video/BV1jM4y1i794/?spm_id_from=333.788&vd_source=f2fccfb804f78aa96a9f694581bafb10](https://www.bilibili.com/video/BV1jM4y1i794/?spm_id_from=333.788&vd_source=f2fccfb804f78aa96a9f694581bafb10)
-
+<object data="tools/video.mp4" height="600px" width="100%"></object>
 ### 快速搭建
 
 ```bash
@@ -42,7 +42,7 @@ pyinstaller -D -w --add-data="./utils/*;./utils" --add-data="./tools/*;./tools" 
 7. 返回统计结果
 8. 保存结果
 
-您可以在[main_win]（./main_win）和 [dialog](dialog)中找到ui文件
+您可以在[main_win]（./main_win）中找到ui文件
 
 
 
