@@ -1,0 +1,18 @@
+<RCC>
+  <qresource prefix="img">
+    <file>icon/button-off.png</file>
+    <file>icon/button-on.png</file>
+    <file>icon/ico.png</file>
+    <file>icon/打开.png</file>
+    <file>icon/关闭.png</file>
+    <file>icon/还原.png</file>
+    <file>icon/摄像头开.png</file>
+    <file>icon/下拉_白色.png</file>
+    <file>icon/运行.png</file>
+    <file>icon/暂停.png</file>
+    <file>icon/正方形.png</file>
+    <file>icon/终止.png</file>
+    <file>icon/最大化.png</file>
+    <file>icon/最小化.png</file>
+  </qresource>
+</RCC>
