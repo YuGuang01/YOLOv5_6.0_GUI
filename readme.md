@@ -2,9 +2,7 @@
 图形化界面项目地址：[界面](https://github.com/Javacr/PyQt5-YOLOv5)
 基于bilibliUP主:[景唯acr](https://space.bilibili.com/34704910)
 
-
 其他版本: [v5.0](https://github.com/Javacr/PyQt5-YOLOv5/tree/yolov5_v5.0), ...
-
 
 ### 演示视频：
 [https://www.bilibili.com/video/BV1jM4y1i794/?spm_id_from=333.788&vd_source=f2fccfb804f78aa96a9f694581bafb10](https://www.bilibili.com/video/BV1jM4y1i794/?spm_id_from=333.788&vd_source=f2fccfb804f78aa96a9f694581bafb10)
