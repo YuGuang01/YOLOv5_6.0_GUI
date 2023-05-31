@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc9589d1-73aa-4dad-8ede-ea6a15224ff0" name="变更" comment="修改信息&#10;&#10;Signed-off-by: jason &lt;jason.wyj@foxmail.com&gt;">
-      <change afterPath="$PROJECT_DIR$/tools/video.mp4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +29,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/tools" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -54,6 +53,8 @@
       <workItem from="1685108304774" duration="54000" />
       <workItem from="1685160774861" duration="134000" />
       <workItem from="1685197884095" duration="2685000" />
+      <workItem from="1685329557807" duration="13000" />
+      <workItem from="1685507899733" duration="635000" />
     </task>
     <task id="LOCAL-00001" summary="建立仓库&#10;&#10;Signed-off-by: jason &lt;jason.wyj@foxmail.com&gt;">
       <created>1685160668005</created>

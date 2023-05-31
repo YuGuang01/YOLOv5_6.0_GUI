@@ -14,15 +14,19 @@ from PyQt5.QtGui import QImage, QPixmap, QPainter, QIcon
 from models.experimental import attempt_load
 from utils.datasets import LoadImages, LoadWebcam
 from utils.CustomMessageBox import MessageBox
-from utils.general import check_img_size, check_requirements, check_imshow, colorstr, non_max_suppression,apply_classifier, scale_coords, xyxy2xywh, strip_optimizer, set_logging, increment_path
+from utils.general import check_img_size, check_requirements, check_imshow, colorstr, non_max_suppression, \
+    apply_classifier, scale_coords, xyxy2xywh, strip_optimizer, set_logging, increment_path
 from utils.plots import Annotator, colors
 from utils.torch_utils import select_device
 from utils.capnums import Camera
+
 """
 作者：jason
 编写时间：2023/4/9 12:13
 其他：无
 """
+
+
 class DetThread(QThread):  # 目标检测类继承自多线程QThread
     send_img = pyqtSignal(np.ndarray)
     send_raw = pyqtSignal(np.ndarray)
@@ -45,14 +49,16 @@ class DetThread(QThread):  # 目标检测类继承自多线程QThread
         self.rate_check = True  # 是否启用延迟 Whether to enable delay
         self.rate = 100
         self.save_fold = './result'
+
     '''
     运行时参数
     '''
+
     @torch.no_grad()
     def run(self,
             imgsz=640,  # 推理大小（像素） inference size (pixels)
             max_det=1000,  # 每个图像的最大检测数 maximum detections per image
-            device='',  #CUDA 设备，即 0 或 0，1，2，3 或 CPU cuda device, i.e. 0 or 0,1,2,3 or cpu
+            device='',  # CUDA 设备，即 0 或 0，1，2，3 或 CPU cuda device, i.e. 0 or 0,1,2,3 or cpu
             view_img=True,  # 显示结果 show results
             save_txt=False,  # 将结果保存到.txt save results to *.txt
             save_conf=False,  # 在 --保存 TXT 标签中保存置信度 save confidences in --save-txt labels
@@ -153,7 +159,7 @@ class DetThread(QThread):  # 目标检测类继承自多线程QThread
                     if img.ndimension() == 3:
                         img = img.unsqueeze(0)
 
-                    pred = model(img, augment=augment)[0] # 目标检测
+                    pred = model(img, augment=augment)[0]  # 目标检测
 
                     # 非极大抑制 Apply NMS
                     pred = non_max_suppression(pred, self.conf_thres, self.iou_thres, classes, agnostic_nms,
@@ -176,9 +182,9 @@ class DetThread(QThread):  # 目标检测类继承自多线程QThread
                     if self.rate_check:
                         time.sleep(1 / self.rate)
                     im0 = annotator.result()
-                    self.send_img.emit(im0) # 将原始图片信号发送给主界面
-                    self.send_raw.emit(im0s if isinstance(im0s, np.ndarray) else im0s[0]) # 将处理后的图片信号发送给主界面
-                    self.send_statistic.emit(statistic_dic) # 将处理后的图片信号发送给主界面
+                    self.send_img.emit(im0)  # 将原始图片信号发送给主界面
+                    self.send_raw.emit(im0s if isinstance(im0s, np.ndarray) else im0s[0])  # 将处理后的图片信号发送给主界面
+                    self.send_statistic.emit(statistic_dic)  # 将处理后的图片信号发送给主界面
                     if self.save_fold:
                         os.makedirs(self.save_fold, exist_ok=True)
                         if self.vid_cap is None:
@@ -199,7 +205,7 @@ class DetThread(QThread):  # 目标检测类继承自多线程QThread
                             self.out.write(im0)
                     if percent == self.percent_length:
                         print(count)
-                        self.send_percent.emit(0) # 将进度信息发送给主界面
+                        self.send_percent.emit(0)  # 将进度信息发送给主界面
                         self.send_msg.emit('检测结束')
                         if hasattr(self, 'out'):
                             self.out.release()
@@ -207,9 +213,12 @@ class DetThread(QThread):  # 目标检测类继承自多线程QThread
 
         except Exception as e:
             self.send_msg.emit('%s' % e)
+
+
 '''
 在此处实例化窗体类 创建信号槽
 '''
+
 
 class MainWindow(QMainWindow, Ui_mainWindow):
     def __init__(self, parent=None):
@@ -341,7 +350,7 @@ class MainWindow(QMainWindow, Ui_mainWindow):
             self.statistic_msg('%s' % e)
 
     def load_setting(self):
-        config_file = 'config/setting.json' # 配置文件路径
+        config_file = 'config/setting.json'  # 配置文件路径
         if not os.path.exists(config_file):
             iou = 0.26
             conf = 0.33
@@ -498,9 +507,11 @@ class MainWindow(QMainWindow, Ui_mainWindow):
 
         except Exception as e:
             print(repr(e))
+
     '''
     显示统计显示检测结果 
     '''
+
     def show_statistic(self, statistic_dic):
         try:
             self.resultWidget.clear()
@@ -511,9 +522,11 @@ class MainWindow(QMainWindow, Ui_mainWindow):
 
         except Exception as e:
             print(repr(e))
+
     '''
     关闭事件
     '''
+
     def closeEvent(self, event):
         self.det_thread.jump_out = True
         config_file = 'config/setting.json'
@@ -530,11 +543,12 @@ class MainWindow(QMainWindow, Ui_mainWindow):
             self.closeButton, title='提示', text='正在关闭程序！', time=2000, auto=True).exec_()
         sys.exit(0)
 
+
 '''
 图像化界面，在此引用运行 
 '''
 if __name__ == "__main__":
     app = QApplication(sys.argv)
-    Win = MainWindow() # 实例化对象
-    Win.show() # 显示窗口
+    Win = MainWindow()  # 实例化对象
+    Win.show()  # 显示窗口
     sys.exit(app.exec_())
